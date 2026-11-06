@@ -1,0 +1,74 @@
+{
+ "greedy": {
+  "policy": "greedy",
+  "orders": 2052.67,
+  "fulfilment_pct": 63.63,
+  "cancel_pct": 36.3,
+  "mean_pickup_km": 2.37,
+  "p90_pickup_km": 3.68,
+  "mean_pickup_min": 7.93,
+  "driver_utilisation_pct": 31.23,
+  "driver_declines": 848.67,
+  "reposition_km_per_driver": 0.0
+ },
+ "batched": {
+  "policy": "batched",
+  "orders": 2052.67,
+  "fulfilment_pct": 65.93,
+  "cancel_pct": 34.03,
+  "mean_pickup_km": 2.27,
+  "p90_pickup_km": 3.65,
+  "mean_pickup_min": 7.57,
+  "driver_utilisation_pct": 32.07,
+  "driver_declines": 853.33,
+  "reposition_km_per_driver": 0.0
+ },
+ "batched+reposition": {
+  "policy": "batched+reposition",
+  "orders": 2052.67,
+  "fulfilment_pct": 83.53,
+  "cancel_pct": 16.43,
+  "mean_pickup_km": 1.91,
+  "p90_pickup_km": 3.42,
+  "mean_pickup_min": 6.4,
+  "driver_utilisation_pct": 38.8,
+  "driver_declines": 865.0,
+  "reposition_km_per_driver": 113.87
+ },
+ "headline": {
+  "fulfilment_greedy_batched_reposition": [
+   63.63,
+   65.93,
+   83.53
+  ],
+  "pickup_km_greedy_vs_reposition": [
+   2.37,
+   1.91
+  ],
+  "pickup_cut_pct": 19.4
+ },
+ "fleet_sweep_fulfilment_pct": {
+  "greedy": {
+   "60": 52.1,
+   "80": 62.4,
+   "100": 71.8,
+   "120": 76.0,
+   "140": 79.4,
+   "160": 86.9,
+   "180": 88.3
+  },
+  "batched+reposition": {
+   "60": 73.5,
+   "80": 82.2,
+   "100": 84.6,
+   "120": 90.4,
+   "140": 87.6,
+   "160": 92.9,
+   "180": 93.4
+  }
+ },
+ "drivers_needed_for_80pct": {
+  "greedy": 160,
+  "batched+reposition": 80
+ }
+}
